@@ -1,4 +1,5 @@
 #UI Creation to display what si calculated in hipanalysis.py
+#Written by Ethan Tran
 
 from tkinter import * 
 import sys
