@@ -1,5 +1,5 @@
 #Program that calculates various properties of a hip implant then sends data to UI 
-#All functions have been written by myself unless specified 
+#All functions have been written by Ethan Tran unless specified 
 
 import math
 from tkinter import *
@@ -14,7 +14,7 @@ modulus_bone = 17
 modulus_implant = 114 
 stem_dia = 17
 
-#Subprogram 1: calculating minimum stem diameter
+#Subprogram 1: calculating minimum stem diameter - Ethan Tran
 def subProgram1():
     app_ten_stress = 0
     d = stem_dia
@@ -30,7 +30,7 @@ def subProgram1():
             break
         d = d-0.01
 
-#Displays values calculated in subprogram1 - Called by the UI
+#Displays values calculated in subprogram1 - Called by the UI - Ethan Tran
 def textSubProgram1():
     dia, stress = subProgram1()
     
@@ -41,7 +41,7 @@ def textSubProgram1():
     appTenStress = Label(text = ("Applied", "Tensile", "Stress", "For", "Minimum", "Diameter:", stress, "MPa"))
     appTenStress.place(relx = 0.07, rely = 0.42, anchor = W)
 
-#Subprogram2: Calculates Fatigue Life (team member wrote this function)
+#Subprogram2: Calculates Fatigue Life (team member wrote this function) - Ethan Tran
 def subProgram2(): 
     r = []
     area = math.pow(stem_dia,2)* math.pi/4 #Cross-sectional area of the femoral stem
@@ -83,7 +83,7 @@ def subProgram2():
     r.append(int(N[-1]))
     return r
 
-#Displays values calculated by subprogram2 - Called by UI
+#Displays values calculated by subprogram2 - Called by UI - Ethan Tran
 def textSubProgram2():
     values = subProgram2()
     stress_amp_adj = values[0]
@@ -120,7 +120,7 @@ def subprogram3():
 
     return y, cs
 
-#Displays values calculated in subprogram3 - Called by UI
+#Displays values calculated in subprogram3 - Called by UI - Ethan Tran
 def textSubProgram3():
     y, cs = subprogram3()
     cs = [round(x) for x in cs]
