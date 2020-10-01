@@ -1,3 +1,3 @@
 # iBioMed-Projects
 iBiomed Design Project codes\
-Projects were done in a group of 4
+Year 1 projects were done in a group of 4
