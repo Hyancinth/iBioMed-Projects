@@ -14,7 +14,7 @@ from PIL import ImageFont
 import time
 import pyrebase
 
-#Firebase initialization (Written by me)
+#Firebase initialization (Written by Ethan Tran)
 config = {
     "apiKey": "AIzaSyA4fFc50MbroRk0YgUGuYcci7YKl2rM_-I",
     "authDomain": "baby-temperature.firebaseapp.com",
@@ -155,7 +155,7 @@ def main():
         
         temp = measure_avgtemp()
 
-        #Finding local time (written by me)
+        #Finding local time (written by Ethan Tran)
         t = time.localtime()
         current_time = time.strftime("%H:%M:%S", t)
         #Uploading sensor data to Firebase (written by me)
